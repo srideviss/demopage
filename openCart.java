@@ -10,8 +10,9 @@ import java.util.concurrent.TimeUnit;
 
 public class openCart {
     public static void main(String[] args)  {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\srideviss\\Downloads\\chromedriver_win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+//         System.setProperty("webdriver.chrome.driver", "C:\\Users\\srideviss\\Downloads\\chromedriver_win32\\chromedriver.exe");
+//         WebDriver driver = new ChromeDriver();
+          WebDriverManager.chromedriver().setup();
         WebDriverWait wait=new WebDriverWait(driver, 10);;
         driver.get("https://www.opencart.com/index.php?route=account/login");
            driver.manage().window().maximize();
